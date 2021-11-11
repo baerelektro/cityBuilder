@@ -1,0 +1,46 @@
+{
+	"ABI version": 2,
+	"version": "2.2",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "createCity",
+			"inputs": [
+				{"name":"minStorageValue","type":"uint8"},
+				{"name":"maxDifference","type":"uint8"},
+				{"name":"numberOfProducts","type":"uint8"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_city",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"_name","type":"string"},{"name":"_cityId","type":"uint8"},{"name":"_Storages","type":"uint8[]"},{"name":"_ProduktsValues","type":"uint8[]"}],"name":"_city","type":"tuple[]"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"_numberOfProducts","type":"uint256"},
+		{"name":"_maxStorageDifference","type":"uint256"},
+		{"name":"_minStorageValue","type":"uint256"},
+		{"components":[{"name":"_name","type":"string"},{"name":"_cityId","type":"uint8"},{"name":"_Storages","type":"uint8[]"},{"name":"_ProduktsValues","type":"uint8[]"}],"name":"_city","type":"tuple[]"}
+	]
+}
