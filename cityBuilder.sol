@@ -24,7 +24,7 @@ struct City {
 
 City[] public _city;
 
-function createCity (uint8 minStorageValue, uint8 maxDifference, uint8 numberOfProducts) public returns (uint)
+function createCity(uint8 minStorageValue, uint8 maxDifference, uint8 numberOfProducts) public returns (uint)
     { 
         string name = "Test City";
         uint8 Id = 0;
@@ -42,20 +42,26 @@ function createCity (uint8 minStorageValue, uint8 maxDifference, uint8 numberOfP
 
 }
 
+function GatBalance(address addr) internal returns(uint)
+{
+    id =  gamerToOwner[addr];
+    return _gamers.ballance;
+}
+
 //  Функция перемещает игрока в город
-function gamerToCity (uint gamerId, uint city id) public returns (uint)
+function gamerToCity(uint gamerId, uint city id) public returns(uint)
 {
    
 }
 
 // Функция купить товар
-function bayProduct (unit productId, uint8 value) public returns (uint)
+function bayProduct(unit productId, uint8 value) public returns(uint)
 {
 
 }
 
 //Функция продать товар
-function sellProduct (unit productId, uint8 value) public returns (uint)
+function sellProduct(unit productId, uint8 value) public returns(uint)
 {
 
 }
