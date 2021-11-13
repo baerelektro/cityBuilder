@@ -1,9 +1,8 @@
 pragma ton-solidity ^0.51.0; //1. Здесь укажи версию Solidity
-pragma AbiHeader expire; 
 
+import "./Game.sol";
 
-
-contract cityBuilder {
+contract CityBuilder is Game {
 
 
 // Количество продуктов в экосистеме
