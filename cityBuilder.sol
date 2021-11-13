@@ -2,6 +2,7 @@ pragma ton-solidity ^0.51.0; //1. Здесь укажи версию Solidity
 pragma AbiHeader expire; 
 
 
+
 contract cityBuilder {
 
 
@@ -15,7 +16,7 @@ uint _minStorageValue = 128;
 // Структура города с массивом склада
 struct City {
     string _name;
-    uint8 _cityId;
+    uint _cityId;
     // Массив объёмов ячеек хранения склада
     uint8[]  _Storages;
     // Массив количества товара на складе
@@ -39,5 +40,23 @@ function createCity (uint8 minStorageValue, uint8 maxDifference, uint8 numberOfP
         }
          _city.push(City(name, Id, Storages, ProduktsValues));
     }
+
+}
+
+//  Функция перемещает игрока в город
+function gamerToCity (uint gamerId, uint city id) public returns (uint)
+{
+   
+}
+
+// Функция купить товар
+function bayProduct (unit productId, uint8 value) public returns (uint)
+{
+
+}
+
+//Функция продать товар
+function sellProduct (unit productId, uint8 value) public returns (uint)
+{
 
 }
